@@ -39,7 +39,7 @@ const features = [
     {
         icon: Shield,
         title: "Private & Secure",
-        description: "Your data is encrypted and synced securely via iCloud. No tracking, ever."
+        description: "Your data is encrypted and synced securely to the cloud. No tracking, ever."
     }
 ];
 
