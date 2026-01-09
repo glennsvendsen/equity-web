@@ -1,15 +1,25 @@
-import { Clock, TrendingUp, Calendar, FileText, Smartphone, Shield, Zap, Sparkles } from "lucide-react";
+import { Clock, TrendingUp, Calendar, FileText, Smartphone, Shield, Sparkles, CalendarClock } from "lucide-react";
 
 const features = [
     {
-        icon: Zap,
+        icon: Sparkles,
+        title: "Smart Fill",
+        description: "Type naturally like 'Work 9-17' or '#Meeting 2h' and Equity automatically calculates the hours for you."
+    },
+    {
+        icon: CalendarClock,
+        title: "Import from Calendar",
+        description: "Seamlessly import events from your iOS calendar to automatically track your work hours."
+    },
+    {
+        icon: Clock,
         title: "Heuristic Quick Add",
         description: "Long-press the Add button to instantly log 1h, 2h, 3h, or 8h. Perfect for fast tracking without typing."
     },
     {
         icon: Calendar,
-        title: "Calendar Integration",
-        description: "Seamlessly view your time entries in an intuitive calendar interface. See your balance at a glance."
+        title: "Calendar View",
+        description: "See your time entries at a glance with an intuitive calendar interface showing your daily balance."
     },
     {
         icon: TrendingUp,
@@ -51,7 +61,7 @@ const Features = () => {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {features.map((feature, index) => (
                         <div
                             key={feature.title}
@@ -66,7 +76,7 @@ const Features = () => {
                 </div>
 
                 {/* One-time purchase badge */}
-                <div className="flex justify-center mt-16 opacity-0 animate-fade-up" style={{ animationDelay: "0.9s" }}>
+                <div className="flex justify-center mt-16 opacity-0 animate-fade-up" style={{ animationDelay: "1.0s" }}>
                     <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-accent/20 bg-accent/5">
                         <Sparkles className="w-5 h-5 text-accent" />
                         <span className="text-sm font-medium">
