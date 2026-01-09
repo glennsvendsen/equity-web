@@ -33,8 +33,8 @@ const features = [
     },
     {
         icon: Smartphone,
-        title: "Native iOS Experience",
-        description: "Built with SwiftUI for Dark Mode, widgets, and seamless performance."
+        title: "Native Experience",
+        description: "Designed for iOS with full support for Dark Mode, widgets, and smooth performance."
     },
     {
         icon: Shield,
