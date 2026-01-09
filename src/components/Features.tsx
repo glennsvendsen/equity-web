@@ -1,20 +1,20 @@
-import { Clock, TrendingUp, Calendar, FileText, Smartphone, Shield } from "lucide-react";
+import { Clock, TrendingUp, Calendar, FileText, Smartphone, Shield, Zap, Sparkles } from "lucide-react";
 
 const features = [
     {
-        icon: Clock,
-        title: "Quick Add",
-        description: "Log hours in seconds with one-tap time entry. Designed for speed and simplicity."
+        icon: Zap,
+        title: "Heuristic Quick Add",
+        description: "Long-press the Add button to instantly log 1h, 2h, 3h, or 8h. Perfect for fast tracking without typing."
+    },
+    {
+        icon: Calendar,
+        title: "Calendar Integration",
+        description: "Seamlessly view your time entries in an intuitive calendar interface. See your balance at a glance."
     },
     {
         icon: TrendingUp,
         title: "Balance History",
         description: "Visualize your time balance over weeks, months, and quarters with beautiful charts."
-    },
-    {
-        icon: Calendar,
-        title: "Calendar View",
-        description: "See your time entries at a glance with an intuitive calendar interface."
     },
     {
         icon: FileText,
@@ -23,13 +23,13 @@ const features = [
     },
     {
         icon: Smartphone,
-        title: "Native Experience",
-        description: "Built for iOS with support for Dark Mode, widgets, and seamless performance."
+        title: "Native iOS Experience",
+        description: "Built with SwiftUI for Dark Mode, widgets, and seamless performance."
     },
     {
         icon: Shield,
         title: "Private & Secure",
-        description: "Your data is encrypted and synced securely across your devices."
+        description: "Your data is encrypted and synced securely via iCloud. No tracking, ever."
     }
 ];
 
@@ -63,6 +63,16 @@ const Features = () => {
                             <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
                         </div>
                     ))}
+                </div>
+
+                {/* One-time purchase badge */}
+                <div className="flex justify-center mt-16 opacity-0 animate-fade-up" style={{ animationDelay: "0.9s" }}>
+                    <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-accent/20 bg-accent/5">
+                        <Sparkles className="w-5 h-5 text-accent" />
+                        <span className="text-sm font-medium">
+                            One-time purchase · No subscription required
+                        </span>
+                    </div>
                 </div>
             </div>
         </section>
