@@ -15,8 +15,8 @@ const RealScreenshots = () => {
 
                 <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
                     {/* Smart Fill & Calendar Import Screenshot */}
-                    <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-                        <div className="relative group">
+                    <div className="opacity-0 animate-fade-up flex flex-col items-center" style={{ animationDelay: "0.2s" }}>
+                        <div className="relative group w-full max-w-[320px]">
                             <div className="absolute -inset-1 bg-gradient-to-r from-accent/20 to-accent/10 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500" />
                             <div className="relative bg-card border border-border rounded-3xl p-2 shadow-2xl overflow-hidden">
                                 <img
@@ -26,7 +26,7 @@ const RealScreenshots = () => {
                                 />
                             </div>
                         </div>
-                        <div className="mt-8 space-y-3">
+                        <div className="mt-8 space-y-3 text-center">
                             <h3 className="text-2xl font-light">Smart Fill & Calendar Import</h3>
                             <p className="text-muted-foreground leading-relaxed">
                                 Type naturally or import directly from your calendar. Equity automatically calculates hours
@@ -36,8 +36,8 @@ const RealScreenshots = () => {
                     </div>
 
                     {/* Insights Screenshot */}
-                    <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.4s" }}>
-                        <div className="relative group">
+                    <div className="opacity-0 animate-fade-up flex flex-col items-center" style={{ animationDelay: "0.4s" }}>
+                        <div className="relative group w-full max-w-[320px]">
                             <div className="absolute -inset-1 bg-gradient-to-r from-accent/10 to-accent/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500" />
                             <div className="relative bg-card border border-border rounded-3xl p-2 shadow-2xl overflow-hidden">
                                 <img
@@ -47,7 +47,7 @@ const RealScreenshots = () => {
                                 />
                             </div>
                         </div>
-                        <div className="mt-8 space-y-3">
+                        <div className="mt-8 space-y-3 text-center">
                             <h3 className="text-2xl font-light">Advanced Insights</h3>
                             <p className="text-muted-foreground leading-relaxed">
                                 Understand your work patterns with detailed analytics. Track overtime days, tag breakdowns,
