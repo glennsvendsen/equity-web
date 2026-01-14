@@ -20,7 +20,7 @@ const RealScreenshots = () => {
                             <div className="absolute -inset-1 bg-gradient-to-r from-accent/20 to-accent/10 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500" />
                             <div className="relative bg-card border border-border rounded-3xl p-2 shadow-2xl overflow-hidden">
                                 <img
-                                    src="/add-entry-screenshot.png"
+                                    src="./add-entry-screenshot.png"
                                     alt="Smart Fill and Calendar Import"
                                     className="w-full h-auto rounded-2xl"
                                 />
@@ -41,7 +41,7 @@ const RealScreenshots = () => {
                             <div className="absolute -inset-1 bg-gradient-to-r from-accent/10 to-accent/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500" />
                             <div className="relative bg-card border border-border rounded-3xl p-2 shadow-2xl overflow-hidden">
                                 <img
-                                    src="/insights-screenshot.png"
+                                    src="./insights-screenshot.png"
                                     alt="Advanced Insights and Analytics"
                                     className="w-full h-auto rounded-2xl"
                                 />
@@ -60,8 +60,8 @@ const RealScreenshots = () => {
                 {/* Feature highlights */}
                 <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-20 opacity-0 animate-fade-up" style={{ animationDelay: "0.6s" }}>
                     <div className="text-center p-6 rounded-2xl border border-border bg-card/50">
-                        <p className="text-3xl font-light mb-2">10-day</p>
-                        <p className="text-sm text-muted-foreground">Free trial included</p>
+                        <p className="text-3xl font-light mb-2">PDF & Excel</p>
+                        <p className="text-sm text-muted-foreground">Export your data</p>
                     </div>
                     <div className="text-center p-6 rounded-2xl border border-border bg-card/50">
                         <p className="text-3xl font-light mb-2">Cloud Sync</p>
