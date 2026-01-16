@@ -13,7 +13,7 @@ const RealScreenshots = () => {
                     </h2>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
+                <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto items-start">
                     {/* Smart Fill & Calendar Import Screenshot */}
                     <div className="opacity-0 animate-fade-up flex flex-col items-center" style={{ animationDelay: "0.2s" }}>
                         <div className="relative group w-full max-w-[320px]">
@@ -27,10 +27,29 @@ const RealScreenshots = () => {
                             </div>
                         </div>
                         <div className="mt-8 space-y-3 text-center">
-                            <h3 className="text-2xl font-light">Smart Fill & Calendar Import</h3>
-                            <p className="text-muted-foreground leading-relaxed">
-                                Type naturally or import directly from your calendar. Equity automatically calculates hours
-                                and suggests entries based on your schedule.
+                            <h3 className="text-2xl font-light">Smart Fill & Calendar</h3>
+                            <p className="text-muted-foreground leading-relaxed text-sm">
+                                Type naturally or import directly from your calendar. Equity automatically calculates hours.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Balance Score Screenshot */}
+                    <div className="opacity-0 animate-fade-up flex flex-col items-center" style={{ animationDelay: "0.3s" }}>
+                        <div className="relative group w-full max-w-[320px]">
+                            <div className="absolute -inset-1 bg-gradient-to-r from-positive/20 to-accent/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500" />
+                            <div className="relative bg-card border border-border rounded-3xl p-2 shadow-2xl overflow-hidden">
+                                <img
+                                    src="./balance-score-new.png"
+                                    alt="Personal Balance Score"
+                                    className="w-full h-auto rounded-2xl"
+                                />
+                            </div>
+                        </div>
+                        <div className="mt-8 space-y-3 text-center">
+                            <h3 className="text-2xl font-light">Balance Score</h3>
+                            <p className="text-muted-foreground leading-relaxed text-sm">
+                                Visual health check of your work-life balance. Gamified to keep you in the perfect zone.
                             </p>
                         </div>
                     </div>
@@ -49,9 +68,8 @@ const RealScreenshots = () => {
                         </div>
                         <div className="mt-8 space-y-3 text-center">
                             <h3 className="text-2xl font-light">Advanced Insights</h3>
-                            <p className="text-muted-foreground leading-relaxed">
-                                Understand your work patterns with detailed analytics. Track overtime days, tag breakdowns,
-                                and weekly comparisons at a glance.
+                            <p className="text-muted-foreground leading-relaxed text-sm">
+                                Understand your work patterns with detailed analytics. Track overtime and weekly comparisons.
                             </p>
                         </div>
                     </div>
